@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DropCatcher</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Axios for HTTP requests -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <style>
+    #toast-container {
+      bottom: auto !important;
+      right: auto !important;
+      top: 10%;
+      left: 0%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo" style="margin-left: 1rem;">DropCatcher</a>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col s1 m3 l3"></div>
+    <form class="col s10 m6 l6" style="margin: 1rem auto;" id="form">
+      <div class="row">
+        <div class="input-field col s12  l6">
+          <input id="username" type="text" class="validate" placeholder=" ">
+          <label for="username">Username</label>
+        </div>
+        <div class="input-field col s12  l6">
+          <input id="password" type="password" class="validate" placeholder=" ">
+          <label for="password">Password</label>
+        </div>
+
+      </div>
+      <div class="row">
+        <div class="input-field col s3">
+          <input id="cardMonth" type="text" class="validate" placeholder=" ">
+          <label for="cardMonth">Card Expirey Month</label>
+        </div>
+        <div class="input-field col s3">
+          <input id="cardYear" type="text" class="validate" placeholder=" ">
+          <label for="cardYear">Card Expirey Year</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="name" type="text" class="validate" placeholder=" ">
+          <label for="name">Full Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12  l6">
+          <input id="creditcard" type="text" class="validate" placeholder=" ">
+          <label for="creditcard">Credit Card</label>
+        </div>
+        <div class="input-field col s12  l6">
+          <input id="cardCVC" type="text" class="validate" placeholder=" ">
+          <label for="cardCVC">CVC</label>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="input-field col s12  l6">
+          <input id="cardMonth" type="text" class="validate" placeholder=" ">
+          <label for="cardMonth">Card Month</label>
+        </div>
+        <div class="input-field col s12  l6">
+          <input id="cardYear" type="text" class="validate" placeholder=" ">
+          <label for="cardYear">Card Year</label>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="input-field col s12  l6">
+          <input id="countryCode" type="text" class="validate" placeholder=" ">
+          <label for="countryCode">Country Alias</label>
+        </div>
+        <div class="input-field col s12  l6">
+          <input id="zipCode" type="text" class="validate" placeholder=" ">
+          <label for="zipCode">Zip Code</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12  l6">
+          <input id="cardNumber" type="text" class="validate" placeholder=" ">
+          <label for="countryCode">Credit Card Number</label>
+        </div>
+        <div class="input-field col s6 m5 l3">
+          <input id="cardMonth" type="text" class="validate" placeholder="01, 02 / 12 etc">
+          <label for="cardMonth">Card Expirey Month</label>
+        </div>
+        <div class="input-field col s6 m5 l3">
+          <input id="cardYear" type="text" class="validate" placeholder=" ">
+          <label for="cardYear">Card Expirey Year</label>
+        </div>
+      </div> -->
+      <div class="row">
+        <div class="input-field col s8">
+          <input id="domain" type="text" class="validate" placeholder=" ">
+          <label for="domain">Domain name</label>
+        </div>
+      </div>
+    </form>
+    <div class="col s1 m3 l3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col s1 m3"></div>
+    <div class="col s3 m2">
+      <a class="waves-effect waves-light btn" id="start">Start</a>
+    </div>
+    <div class="col s3 m2">
+      <a class="waves-effect waves-light btn red" id="stop">Stop</a>
+    </div>
+    <div class="col s3 m2">
+      <a class="waves-effect waves-light btn blue" id="save">Save Data</a>
+    </div>
+    <div class="col s1 m3"></div>
+  </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>

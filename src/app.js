@@ -137,6 +137,8 @@ async function register(data) {
     if (resData.status === "fail") {
       logo.innerHTML = "Error Registering Domain";
       M.toast({ html: resData.message });
+      stop.click();
+      setTimeout(() => startChecker(), 3000);
     }
   } catch (err) {
     logo.innerHTML = "Error registering domain please try again";
